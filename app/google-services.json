@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "45806928086",
+    "firebase_url": "https://cleaningapp-3c387.firebaseio.com",
+    "project_id": "cleaningapp-3c387",
+    "storage_bucket": "cleaningapp-3c387.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45806928086:android:d30831c629ce1bb817c977",
+        "android_client_info": {
+          "package_name": "com.example.cleanapploginui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45806928086-bl8mufkgklbtlk4bm6h50fptmevfhpet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo3Zzk931_SJtSPl91k6etRDxty9cRHkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45806928086-bl8mufkgklbtlk4bm6h50fptmevfhpet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
