@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -26,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     CheckBox log_checkBox;
     ImageButton log_signin;
     Button log_signup;
+    TextView txtforgetpassword;
     private FirebaseAuth mAuth;
 
     @Override
@@ -38,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         txtemail = (EditText)findViewById(R.id.email);
         txtpassword = (EditText)findViewById(R.id.password);
+        txtforgetpassword=(TextView) findViewById(R.id.forget_password);
         log_checkBox = (CheckBox)findViewById(R.id.checkbox);
         log_signin =(ImageButton)findViewById(R.id.login);
         log_signup = (Button) findViewById(R.id.signup);
@@ -87,6 +90,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        txtforgetpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(new Intent(getApplicationContext(),forget_password.class));
+            }
+        });
+
+
     }
 
     @Override
